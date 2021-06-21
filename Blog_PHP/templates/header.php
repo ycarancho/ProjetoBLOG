@@ -22,14 +22,15 @@ include_once("data/posts.php");
 <body>
     <header>
         <a href="<?= $BASE_URL; ?>" id="logo">
+            <!-- Clica na logo e volta pro HOME-->
             <img src="<?= $BASE_URL; ?>/img/logo.svg" alt="Blog Aprendendo a Codar">
         </a>
         <nav>
             <ul id="navbar">
-                <li><a href="<?= $BASE_URL; ?>" clss="nav-link">Home</a></li>
-                <li><a href="#" clss="nav-link">Categorias</a></li>
-                <li><a href="#" clss="nav-link">Sobre</a></li>
-                <li><a href="<?= $BASE_URL; ?>contact.php" clss="nav-link">Contato</a></li>
+                <li><a href="<?= $BASE_URL; ?>" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Categorias</a></li>
+                <li><a href="#" class="nav-link">Sobre</a></li>
+                <li><a href="<?= $BASE_URL; ?>contact.php" class="nav-link">Contato</a></li>
             </ul>
         </nav>
     </header>

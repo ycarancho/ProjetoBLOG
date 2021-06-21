@@ -9,16 +9,21 @@ include_once("templates/header.php")
     <div id="post-container">
         <?php foreach ($posts as $post) : ?>
             <div id="post-box">
-                <img src="<?= $BASE_URL; ?>/img/<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
+
+                <img src="<?= $BASE_URL; ?>/img/<?= $post['img']; ?>" alt="<?= $post['title']; ?>">
+
                 <h2 class="post-title">
-                    <a href="<?= $BASE_URL; ?>post.php?id=<?= $post['id'] ?>"><?= $post['title']; ?></a>
-                    <p class="post-description"><?= $post['description'] ?></p>
+
+                    <a href="<?= $BASE_URL; ?>post.php?id=<?= $post['id']; ?>"><?= $post['title']; ?></a>
+                    <p class="post-description"><?= $post['description']; ?></p>
+
                     <div class="tags-container">
                         <?php foreach ($post['tags'] as $tag) : ?>
                             <a href="#"><?= $tag; ?></a>
                         <?php endforeach ?>
                     </div>
                 </h2>
+
             </div>
         <?php endforeach ?>
     </div>
